@@ -539,7 +539,7 @@ class M3UEPGAddon {
             const epgId = item.attributes?.['tvg-id'] || item.attributes?.['tvg-name'];
             const current = this.getCurrentProgram(epgId);
             const upcoming = this.getUpcomingPrograms(epgId, 3);
-            let description = `📺 CHANNEL: ${item.name}`;
+            let description = `📺 CANAL: ${item.name}`;
             if (current) {
                 const start = current.startTime?.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) || '';
                 const end = current.stopTime?.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) || '';
@@ -547,7 +547,7 @@ class M3UEPGAddon {
                 if (current.description) description += `\n\n${current.description}`;
             }
             if (upcoming.length) {
-                description += '\n\n📅 UPCOMING:\n';
+                description += '\n\n📅 PRÓXIMO:\n';
                 for (const p of upcoming) {
                     description += `${p.startTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} - ${p.title}\n`;
                 }
