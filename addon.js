@@ -603,14 +603,14 @@ async function createAddon(config) {
             {
                 type: 'movie',
                 id: 'iptv_movies',
-                name: 'StudioXTR',
+                name: '🍿 StudioXTR',
                 extra: [{ name: 'search' }, { name: 'skip' }],
                 genres: []
             },
             {
                 type: 'series',
                 id: 'iptv_series',
-                name: 'StudioXTR',
+                name: '🎬 StudioXTR',
                 extra: [{ name: 'genre' }, { name: 'search' }, { name: 'skip' }],
                 genres: []
             }
