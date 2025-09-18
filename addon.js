@@ -596,21 +596,21 @@ async function createAddon(config) {
             {
                 type: 'tv',
                 id: 'iptv_channels',
-                name: 'IPTV Channels',
+                name: '📺 StudioXTR',
                 extra: [{ name: 'genre' }, { name: 'search' }, { name: 'skip' }],
                 genres: []
             },
             {
                 type: 'movie',
                 id: 'iptv_movies',
-                name: 'IPTV Movies',
+                name: 'StudioXTR',
                 extra: [{ name: 'search' }, { name: 'skip' }],
                 genres: []
             },
             {
                 type: 'series',
                 id: 'iptv_series',
-                name: 'IPTV Series',
+                name: 'StudioXTR',
                 extra: [{ name: 'genre' }, { name: 'search' }, { name: 'skip' }],
                 genres: []
             }
