@@ -587,7 +587,7 @@ class M3UEPGAddon {
 async function createAddon(config) {
     const manifest = {
         id: ADDON_ID,
-        version: "2.0.0",
+        version: "2.2.0",
         name: ADDON_NAME,
         description: "Addon Stremio Studio Xtream.",
         resources: ["catalog", "stream", "meta"],
