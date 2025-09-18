@@ -24,7 +24,7 @@ if (process.env.REDIS_URL) {
     }
 }
 
-const ADDON_NAME = "M3U/EPG TV Addon";
+const ADDON_NAME = "📺 StudioXTR";
 const ADDON_ID = "org.stremio.m3u-epg-addon";
 
 const DEBUG_ENV = (process.env.DEBUG_MODE || '').toLowerCase() === 'true';
