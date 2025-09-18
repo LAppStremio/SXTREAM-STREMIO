@@ -1,7 +1,7 @@
 {
   "name": "stremio-m3u-epg-addon",
-  "version": "2.0.0",
-  "description": "Stremio addon for M3U playlists and EPG data with Xtream API support (encrypted configs, LRU/Redis cache)",
+  "version": "2.2.0",
+  "description": "Stremio Addon Studio Xtream",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
