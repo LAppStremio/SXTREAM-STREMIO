@@ -24,7 +24,7 @@ if (process.env.REDIS_URL) {
     }
 }
 
-const ADDON_NAME = "📺 StudioXTR";
+const ADDON_NAME = "⭐StudioXTR";
 const ADDON_ID = "org.stremio.m3u-epg-addon";
 
 const DEBUG_ENV = (process.env.DEBUG_MODE || '').toLowerCase() === 'true';
@@ -427,7 +427,7 @@ class M3UEPGAddon {
             const epgId = item.attributes?.['tvg-id'] || item.attributes?.['tvg-name'];
             const current = this.getCurrentProgram(epgId);
             meta.description = current
-                ? `📡 Now: ${current.title}${current.description ? `\n${current.description}` : ''}`
+                ? `📡 Novo: ${current.title}${current.description ? `\n${current.description}` : ''}`
                 : '📡 Live Channel';
             meta.poster = this.deriveFallbackLogoUrl(item);
             meta.genres = item.category
@@ -543,7 +543,7 @@ class M3UEPGAddon {
             if (current) {
                 const start = current.startTime?.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) || '';
                 const end = current.stopTime?.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) || '';
-                description += `\n\n📡 NOW: ${current.title}${start && end ? ` (${start}-${end})` : ''}`;
+                description += `\n\n📡 NOVO: ${current.title}${start && end ? ` (${start}-${end})` : ''}`;
                 if (current.description) description += `\n\n${current.description}`;
             }
             if (upcoming.length) {
@@ -569,7 +569,7 @@ class M3UEPGAddon {
                 const m = item.name.match(/\((\d{4})\)/);
                 if (m) year = parseInt(m[1]);
             }
-            const description = item.plot || item.attributes?.['plot'] || `Movie: ${item.name}`;
+            const description = item.plot || item.attributes?.['plot'] || `Filme: ${item.name}`;
             return {
                 id: item.id,
                 type: 'movie',
