@@ -428,7 +428,7 @@ class M3UEPGAddon {
             const current = this.getCurrentProgram(epgId);
             meta.description = current
                 ? `📡 Novo: ${current.title}${current.description ? `\n${current.description}` : ''}`
-                : '📡 Live Channel';
+                : '📡 A ver canal';
             meta.poster = this.deriveFallbackLogoUrl(item);
             meta.genres = item.category
                 ? [item.category]
@@ -596,7 +596,7 @@ async function createAddon(config) {
             {
                 type: 'tv',
                 id: 'iptv_channels',
-                name: '📺 StudioXTR',
+                name: '🔥 StudioXTR',
                 extra: [{ name: 'genre' }, { name: 'search' }, { name: 'skip' }],
                 genres: []
             },
